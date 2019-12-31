@@ -11,16 +11,16 @@ import time
 stock_to_track = "AAPL"
 past_prices = []
 a = []
-'''
+
 #for debug
 past_prices  = [222,223,223.5,225,225,227]
-#past_prices = past_prices[::-1]
+past_prices = past_prices[::-1]
 
 for i in range(len(past_prices)):
     a.append(i)
-'''
-#FOR PRODUCTIOn
 
+#FOR PRODUCTIOn
+'''
 current_stock = 0
 for _ in range(8):
     
@@ -30,7 +30,7 @@ for _ in range(8):
     a.append(current_stock)
     current_stock += 1
     time.sleep(1)
-
+'''
 
 #getting the big 5
 y_avg =   sum(past_prices)/len(past_prices)
