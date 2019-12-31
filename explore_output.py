@@ -1,5 +1,6 @@
 import requests
 import json
+
 url = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/get-detail"
 
 querystring = {"region":"US","lang":"en","symbol":"AAPL"}
@@ -29,7 +30,8 @@ for key in data[key_target].keys():
     print("''''''''''")
     print(key)
     print(data[key_target][key])
-    
+'''
 fmt_current_price = data[key_target]['currentPrice']['fmt']
 exc_current_price = data[key_target]['currentPrice']['raw']
 print("\nCurrent Price: " + str(fmt_current_price))
+'''
